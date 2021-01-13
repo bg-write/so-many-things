@@ -8,8 +8,10 @@ const ThingsList = (props) => {
             {props.erikaThings.map(t =>
                 <div>
                     <h2>{t.name}</h2>
-                    {/* <h3>{t.attributes.map}</h3> */}
-                    {/* {t.image} */}
+                    <h3>{t.attributes.map((a) => (
+                        <p>{a}</p>
+                    ))}</h3>
+                    <img style={{ width: "200px", height: "200px"}} src={`${t.image}`} alt="#"/>
                 </div>
             )}
         </div>
