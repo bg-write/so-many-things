@@ -30,17 +30,17 @@ class App extends Component {
     sebastianThings: [
       {
         name: "travel",
-        image: "#",
+        image: "https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg",
         attributes: ["planes", "company", "food"]
       },
       {
         name: "videogames",
-        image: "#",
+        image: "https://cdn1.dotesports.com/wp-content/uploads/2019/10/15202826/b8fbf5b3ce1fca11a1a741ddc49016d7.jpg",
         attributes: ["fun", "PC", "rich story"]
       },
       {
         name: "cooking",
-        image: "#",
+        image: "https://pics.me.me/mean-plastic-i-think-cooking-is-my-calling-the-college-15681275.png",
         attributes: ["fun", "interesting", "tasty"]
       }
     ],
