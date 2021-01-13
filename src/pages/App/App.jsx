@@ -10,6 +10,29 @@ import "./App.css";
 class App extends Component {
   state = {
     user: authService.getUser(),
+    bradyThings: [
+      { 
+        name: 'cow',
+        image: 'https://picsum.photos/200/300',
+        attributes: ['a', 'c', 'd', 'e']
+      },
+      {
+        name: 'blue cow',
+        image: 'https://picsum.photos/200/300',
+        attributes: ['x', 'x', 'x', 'x']
+      },
+      {
+        name: 'red cow',
+        image: 'https://picsum.photos/200/300',
+        attributes: ['y', 'y', 'y', 'y']
+      },
+      {
+        name: 'yellow cow',
+        image: 'https://picsum.photos/200/300',
+        attributes: ["z", "z", "z", "z"] 
+      }
+    ],
+  }
   };
 
   handleLogout = () => {
