@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import authService from "../../services/authService";
 import Users from '../Users/Users'
 import "./App.css";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   state = {
@@ -24,6 +25,23 @@ class App extends Component {
         image: 'https://m.media-amazon.com/images/I/71v0wAY7N-L._AC_UY218_.jpg',
         attributes: ["endless sleep", 'softness of the gods']
       },
+    ],
+    sebastianThings: [
+      {
+        name: "travel",
+        image: "#",
+        attributes: ["planes", "company", "food"]
+      },
+      {
+        name: "videogames",
+        image: "#",
+        attributes: ["fun", "PC", "rich story"]
+      }
+      {
+        name: "cooking",
+        image: "#",
+        attributes: ["fun", "interesting", "tasty"]
+      }
     ]
   };
 
@@ -36,6 +54,7 @@ class App extends Component {
   handleSignupOrLogin = () => {
     this.setState({ user: authService.getUser() });
   };
+
 
   render() {
     const { user } = this.state
