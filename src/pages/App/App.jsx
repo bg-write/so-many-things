@@ -8,6 +8,7 @@ import Users from '../Users/Users'
 import "./App.css";
 import { Link } from "react-router-dom";
 import ThingsList from "../../components/ThingsList/ThingsList";
+import SebastianThing from '../../components/sebastianlist/sebastianThing'
 
 class App extends Component {
   state = {
@@ -135,6 +136,22 @@ class App extends Component {
           }}
           >
             <p>Erika's things :D</p>
+        </Link>
+
+        <Route
+          exact path="/sebastianlist"
+          render={() =>
+            <SebastianThing
+              sebastianThings={this.state.sebastianThings}
+            />
+          }
+        />
+        <Link
+          to={{
+            pathname: "/sebastianlist"
+          }}
+          >
+            <p>Sebastian's List of things :D</p>
         </Link>
       </>
     );
