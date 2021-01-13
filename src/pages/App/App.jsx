@@ -7,6 +7,7 @@ import authService from "../../services/authService";
 import Users from '../Users/Users'
 import "./App.css";
 import { Link } from "react-router-dom";
+import ThingsList from "../../components/ThingsList/ThingsList";
 
 class App extends Component {
   state = {
@@ -36,7 +37,7 @@ class App extends Component {
         name: "videogames",
         image: "#",
         attributes: ["fun", "PC", "rich story"]
-      }
+      },
       {
         name: "cooking",
         image: "#",
@@ -66,7 +67,7 @@ class App extends Component {
       }
     ],
   }
-  };
+
 
   handleLogout = () => {
     authService.logout();
@@ -120,9 +121,25 @@ class App extends Component {
             user ? <Users /> : <Redirect to="/login" />
           }
         />
+        <Route
+          exact path="/thingslist"
+          render={() =>
+            <ThingsList
+              erikaThings={this.state.erikaThings}
+            />
+          }
+        />
+        <Link
+          to={{
+            pathname: "/thingslist"
+          }}
+          >
+            <p>Erika's things :D</p>
+        </Link>
       </>
     );
   }
-}
+};
+
 
 export default App;
