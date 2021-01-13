@@ -42,7 +42,30 @@ class App extends Component {
         image: "#",
         attributes: ["fun", "interesting", "tasty"]
       }
-    ]
+    ],
+    bradyThings: [
+      {
+        name: 'cow',
+        image: 'https://picsum.photos/200/300',
+        attributes: ['a', 'c', 'd', 'e']
+      },
+      {
+        name: 'blue cow',
+        image: 'https://picsum.photos/200/300',
+        attributes: ['x', 'x', 'x', 'x']
+      },
+      {
+        name: 'red cow',
+        image: 'https://picsum.photos/200/300',
+        attributes: ['y', 'y', 'y', 'y']
+      },
+      {
+        name: 'yellow cow',
+        image: 'https://picsum.photos/200/300',
+        attributes: ["z", "z", "z", "z"]
+      }
+    ],
+  }
   };
 
   handleLogout = () => {
