@@ -6,10 +6,28 @@ import Login from "../Login/Login";
 import authService from "../../services/authService";
 import Users from '../Users/Users'
 import "./App.css";
+import { Link } from "react-router-dom";
 
 class App extends Component {
   state = {
     user: authService.getUser(),
+    sebastianThings: [
+      {
+        name: "travel",
+        image: "#",
+        attributes: ["planes", "company", "food"]
+      },
+      {
+        name: "videogames",
+        image: "#",
+        attributes: ["fun", "PC", "rich story"]
+      }
+      {
+        name: "cooking",
+        image: "#",
+        attributes: ["fun", "interesting", "tasty"]
+      }
+    ]
   };
 
   handleLogout = () => {
@@ -21,6 +39,7 @@ class App extends Component {
   handleSignupOrLogin = () => {
     this.setState({ user: authService.getUser() });
   };
+
 
   render() {
     const { user } = this.state
