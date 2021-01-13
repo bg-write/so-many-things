@@ -10,6 +10,21 @@ import "./App.css";
 class App extends Component {
   state = {
     user: authService.getUser(),
+    erikaThings :[
+      {
+        name: "Mint chocolate chip ice cream",
+        image: 'https://simplysohealthy.com/wp-content/uploads/2017/03/cmic-1.jpg',
+        attributes: ["minty fresh", 'chocolate goodness', 'feeds the soul']
+      },  {
+        name: "Nasa Blanket",
+        image: 'https://images.fun.com/products/48499/1-1/nasa-icon-microfiber-fleece-throw.jpg',
+        attributes: ["I need my Space", 'science is fun']
+      }, {
+        name: "Fluffy Pillow",
+        image: 'https://m.media-amazon.com/images/I/71v0wAY7N-L._AC_UY218_.jpg',
+        attributes: ["endless sleep", 'softness of the gods']
+      },
+    ]
   };
 
   handleLogout = () => {
